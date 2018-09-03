@@ -1,0 +1,9 @@
+provider:
+  name: faas
+  gateway: http://127.0.0.1:8080
+
+functions:
+  thesensitivefunc:
+    lang: go
+    handler: ./thesensitivefunc
+    image: martindekov/thesensitivefunc:latest
